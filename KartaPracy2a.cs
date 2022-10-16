@@ -122,3 +122,4 @@ else
 {
     Console.WriteLine("NIE, trojkat nie powstanie");
 }
+*/
