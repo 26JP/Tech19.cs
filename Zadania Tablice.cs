@@ -31,7 +31,7 @@ for (int i = 0; i < n; i++)
 }
 
 //zad 1
-/*int maks = T[0];
+int maks = T[0];
 for (int i = 1; i < n; i++)
 {
     if (T[i] > maks) 
@@ -39,9 +39,9 @@ for (int i = 1; i < n; i++)
         maks = T[i];
     }
 }
-Console.Write(maks);*/
+Console.Write(maks);
 //zad 2
-/*int min = 20;
+int min = 20;
 for (int i = 0; i < n; i++)
 {
     if (T[i] < min)
@@ -49,10 +49,10 @@ for (int i = 0; i < n; i++)
         min = T[i];
     }
 }
-Console.Write(min);*/
+Console.Write(min);
 
 //zad 5
-/*int maks = T[0];
+int maks = T[0];
 int min = T[0];
 for (int i = 0; i < n; i++)
 {
@@ -69,20 +69,20 @@ for (int j = 0; j < n; j++)
     }
 }
 Console.WriteLine();
-Console.Write(maks - min);*/
+Console.Write(maks - min);
 
 //zad 6
-/*int suma = 0;
+int suma = 0;
 for (int i = 0; i < T.Length; i++)
 {
     suma += T[i];
 
 }
 Console.WriteLine();
-Console.Write(suma);*/
+Console.Write(suma);
 
 //zad 7
-/*int srednia = 0;
+int srednia = 0;
 int suma = 0;
 int ilosc = 10;
 for (int i =0; i < T.Length; i++)
@@ -91,10 +91,10 @@ for (int i =0; i < T.Length; i++)
     srednia = suma / ilosc;
 }
 Console.WriteLine();
-Console.Write(srednia);*/
+Console.Write(srednia);
 
 //zad 8
-/*int ilosc_nieparz = 0;
+int ilosc_nieparz = 0;
 int ilosc_parz = 0;
 for (int i = 0; i < n; i++)
 {
@@ -117,7 +117,6 @@ Console.WriteLine();
 
 Console.WriteLine(ilosc_parz);
 Console.WriteLine(ilosc_nieparz);
-*/
 //zad 9
 int pierwsza = 1;
 for (int i = 0; i < n; i++)
