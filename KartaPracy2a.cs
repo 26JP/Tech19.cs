@@ -1,5 +1,5 @@
 //Zad 1
-/*
+
 int a, b;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -11,9 +11,9 @@ else
 {
     Console.WriteLine("Nie, nieparzysta");
 }
-*/
+
 //Zad 2
-/*
+
 int a, b;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -25,9 +25,9 @@ else
 {
     Console.WriteLine("Nie, srednia arytmetyczna nie jest wieksza od sredniej geometrycznej");
 }
-*/
+
 //Zad 3
-/*
+
 int a, b, c;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -56,9 +56,9 @@ else
 {
     Console.WriteLine("Nie, nie ma rownych");
 }
-*/
+
 //Zad 4
-/*
+
 int a, b, c, d;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -80,9 +80,9 @@ else if (d < a && d < b && d < c)
 {
     Console.WriteLine("Najmniejsza liczba to d");
 }
-*/
+
 //Zad 5
-/*
+
 int a, b, c;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -95,9 +95,9 @@ else
 {
     Console.WriteLine("NIE, liczby nie spelnia nierownosci trojkata");
 }
-*/
-//zad 6
-/*
+
+//Zad 6
+
 int a, b, c;
 a = int.Parse(Console.ReadLine());
 b = int.Parse(Console.ReadLine());
@@ -122,4 +122,3 @@ else
 {
     Console.WriteLine("NIE, trojkat nie powstanie");
 }
-*/
