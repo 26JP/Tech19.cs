@@ -39,58 +39,117 @@ for (int j =100; j < 1000; j++)
 }
 System.Console.WriteLine(suma);
 
-//zad 4
+// zad 4
 int ilosc = 0;
+for (int i = 10; i <= 99; i++)
+{
+    int dzie = i / 10;
+    int jedn = i % 10;
+    if (dzie >= jedn * 2)
+    {
+        ilosc++;
+    }
+}
+Console.WriteLine($"Ilość tych liczb to: {ilosc}");
+
+// zad 5
+int suma = 0;
+int ilosc = 0;
+int cs = 0;
 int cd = 0;
 int cj = 0;
-for (int i = 10; i > 100; i++)
+for (int i = 100; i < 1000; i++)
 {
-    cd = i / 10;
+    cs = i / 100;
+    cd = i % 100 / 10;
     cj = i % 10;
-    
-    if (cd >= 2 * cj)
+    if (cs > cj + cd)
     {
+        suma += i;
         ilosc += 1;
     }
 }
-Console.WriteLine($"Ilosc tych liczb to:{ilosc}");
+Console.WriteLine($"Suma to: {suma}");
+Console.WriteLine($"Ilosc to: {ilosc}");
 
-// zad 5
-/*int suma = 0;
+// zad 6
+int n = int.Parse(Console.ReadLine());
+int suma = 0;
 int ilosc = 0;
-int cyfrasetek = 0;
-int cyfradziesiatek = 0;
-int cyfrajednosci = 0;
-int sumacyfrjednosci = 0;
-
-
-*/
+for (int i = 10; i < 100; i++)
+{
+    if (i % 19 == 0)
+    {
+        suma += i;
+        ilosc++;
+    }
+    if (ilosc == n)
+    {
+        Console.WriteLine(suma);
+        break;
+    }
+    if (i == 99)
+    {
+        Console.WriteLine("OUT OF RANGE");
+    }
+}
 // zad 7
-int n = int.parse(console.writeline());
+int n = int.Parse(Console.ReadLine());
 int suma = 0;
 int skladnik = 0;
-for (int j=999; j>100; j++)
+for (int j = 999; j > 100; j--)
 {
-    if (j%37==0)
+    if (j % 37 == 0)
     {
         skladnik = j;
         break;
     }
 }
-for (int i=0; i<n; i++)
+for (int i = 0; i < n; i++)
 {
-    suma += suma + (skladnik - 37 * i);
+    suma += (skladnik - 37 * i);
 }
-system.console.writeline(suma);
+Console.WriteLine(suma);
 
-//zad 8
+// zad 8
+int n = Convert.ToInt32(Console.ReadLine());
 int suma = 0;
-int n = int.Parse(Console.ReadLine());
-for (int i = 1 ; i <= n ; i++)
+int rytm = 2;
+for (int i = 0; i < n; i++)
 {
-    suma = suma + ((3*i-1)*((int) Math.Pow(-1,i-1)));
+    if (i % 2 == 0)
+    {
+        suma += rytm;
+    }
+    else
+    {
+        rytm *= -1;
+        suma += rytm;
+        rytm *= -1;
+    }
+    rytm += 3;
 }
-System.Console.WriteLine(suma);
+Console.WriteLine(suma);
+
+// zad 9
+int n = Convert.ToInt32(Console.ReadLine());
+int iloczyn = 1;
+int rytm = 2;
+for (int i = 0; i < n; i++)
+{
+    if (i % 2 == 0)
+    {
+        iloczyn *= rytm;
+    }
+    else
+    {
+        rytm *= -1;
+        iloczyn *= rytm;
+        rytm *= -1;
+    }
+    rytm *= 2;
+}
+Console.WriteLine(iloczyn);
 
 //zad 10
 
